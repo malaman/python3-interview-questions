@@ -26,26 +26,20 @@
 
 Python2:
 ```python
-print "Hello, world"
-print "Hello", "world"
-print("Hello", "world")
-```
-````
+>>> print "Hello, world"
 Hello, world
+>>> print "Hello", "world"
 Hello world
+>>> print("Hello", "world")
 ('Hello', 'world')
-````
-
+```
 Python3:
 ```python
-print("Hello, world")
-print("Hello", "world")
-```
-````
+>>> print("Hello, world")
 Hello, world
+>>> print("Hello", "world")
 Hello world
-````
-
+```
 
 * How to write Python3 compatible code in Python2?
 
@@ -53,17 +47,38 @@ With the usage of Python2  `__future__` module, it is possible  to use Python3 i
 
 Python2
 ````python
-from __future__ import print_function
-print('Now Python2 print is', 'like', 'Python3 print')
+>>> from __future__ import print_function
+>>> print('Now Python2 print is', 'like', 'Python3 print')
+Now Python2 print is like Python3 print
 ````
 
-```
-Now Python2 print is like Python3 print
-```
 * What is the differences in the string types for Python3 and Python2?
 
 Python2 strings by default don't have an encoding: they are raw byte data.
+
 Python3 strings are unicode by default. Python3 has also byte data type, which equals to Python2 default string representation. Every string in Python3  can be encoded and stored in bytes, or decoded back into unicode string again.
 
+Python2
+```python
+>>> str = 'München'
+>>> str
+'M\xc3\xbcnchen'
+>>> str = b'München'
+>>> str
+'M\xc3\xbcnchen'
+>>> str = u'München'
+>>> str
+u'M\xfcnchen'
+```
+Python3
 
- 
+```python
+>>> str = 'München'
+>>> str
+'München'
+>>> str2 = str.encode()
+>>> str2
+b'M\xc3\xbcnchen'
+>>> str2.decode()
+'München'
+```

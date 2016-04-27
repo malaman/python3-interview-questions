@@ -11,6 +11,7 @@
 #### Basic questions
 * What are the differences in print command between Python3 and Python2?
 * How to write Python3 compatible code in Python2?
+* What is the differences in the string types for Python3 and Python2?
 
 
 
@@ -29,7 +30,6 @@ print "Hello, world"
 print "Hello", "world"
 print("Hello", "world")
 ```
-Result:
 ````
 Hello, world
 Hello world
@@ -41,7 +41,6 @@ Python3:
 print("Hello, world")
 print("Hello", "world")
 ```
-Result:
 ````
 Hello, world
 Hello world
@@ -61,3 +60,10 @@ print('Now Python2 print is', 'like', 'Python3 print')
 ```
 Now Python2 print is like Python3 print
 ```
+* What is the differences in the string types for Python3 and Python2?
+
+Python2 strings by default don't have an encoding: they are raw byte data.
+Python3 strings are unicode by default. Python3 has also byte data type, which equals to Python2 default string representation. Every string in Python3  can be encoded and stored in bytes, or decoded back into unicode string again.
+
+
+ 

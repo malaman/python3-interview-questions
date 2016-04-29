@@ -88,7 +88,7 @@ b'M\xc3\xbcnchen'
 In Python2 range, map, filter commands return lists, in Python3 the commands return iterable objects. Iterable object can be converted to list via `list(iterable)` command.
 
 Python2
-```
+```python
 >>> a = range(5)
 >>> a
 [0, 1, 2, 3, 4]
@@ -99,7 +99,7 @@ Python2
 ```
 
 Python3
-```
+```python
 >>> a = range(5)
 >>> a
 range(0, 5)

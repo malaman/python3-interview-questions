@@ -12,6 +12,7 @@
 * What are the differences in print command between Python3 and Python2?
 * How to write Python3 compatible code in Python2?
 * What is the differences in the string types for Python3 and Python2?
+* What is the differences between range, map, filter commands for Python3 and Python2?
 
 
 
@@ -81,4 +82,36 @@ Python3
 b'M\xc3\xbcnchen'
 >>> str2.decode()
 'München'
+```
+
+* What is the differences between range, map, filter commands for Python3 and Python2?
+In Python2 range, map, filter commands return lists, in Python3 the commands return iterable objects. Iterable object can be converted to list via `list(iterable)` command.
+
+Python2
+```
+>>> a = range(5)
+>>> a
+[0, 1, 2, 3, 4]
+>>> filter(lambda x: x > 2, a)
+[3, 4]
+>>> map(lambda x: x * 2, a)
+[0, 2, 4, 6, 8]
+```
+
+Python3
+```
+>>> a = range(5)
+>>> a
+range(0, 5)
+>>> a = list(a)
+>>> a
+[0, 1, 2, 3, 4]
+>>> filter(lambda x: x > 2, a)
+<filter object at 0x101c18278>
+>>> list(filter(lambda x: x > 2, a))
+[3, 4]
+>>> map(lambda x: x * 2, a)
+<map object at 0x101c182b0>
+>>> list(map(lambda x: x * 2, a))
+[0, 2, 4, 6, 8]
 ```

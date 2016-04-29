@@ -85,6 +85,7 @@ b'M\xc3\xbcnchen'
 ```
 
 * What is the differences between range, map, filter commands for Python3 and Python2?
+
 In Python2 range, map, filter commands return lists, in Python3 the commands return iterable objects. Iterable object can be converted to list via `list(iterable)` command.
 
 Python2

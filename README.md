@@ -13,6 +13,7 @@
 * How to write Python3 compatible code in Python2?
 * What is the differences in the string types for Python3 and Python2?
 * What is the differences between range, map, filter commands for Python3 and Python2?
+* What is the differences in integer division operations between Python3 and Python2?
 
 
 
@@ -115,4 +116,25 @@ range(0, 5)
 <map object at 0x101c182b0>
 >>> list(map(lambda x: x * 2, a))
 [0, 2, 4, 6, 8]
+```
+
+* What is the differences in integer division operations between Python3 and Python2?
+
+In Python2 integer division with `/` or `//` operators always returns integer as a result. 
+In Python3 integer division with `/` operator returns float, but `//` operator returns integer. 
+
+Python2
+```python
+>>> 15 / 6
+2
+>>> 15 // 6
+2
+```
+
+Python3
+```python
+>>> 15 / 6
+2.5
+>>> 15 // 6
+2
 ```

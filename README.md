@@ -14,6 +14,7 @@
 * What is the differences in the string types for Python3 and Python2?
 * What is the differences between range, map, filter commands for Python3 and Python2?
 * What is the differences in integer division operations between Python3 and Python2?
+* What is the differences in exception handling between Python3 and Python2?
 
 
 
@@ -137,4 +138,38 @@ Python3
 2.5
 >>> 15 // 6
 2
+```
+
+* What is the differences in exception handling between Python3 and Python2?
+
+In Python2 if during exception handling another exception is occur, only last exception is shown. 
+In Python3 in such case all chain of exceptions is shown.
+
+Python2
+```python
+>>> try:
+...     v = int('x')
+... except ValueError:
+...     raise Exception('Something Wrong')
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 4, in <module>
+Exception: Something Wrong
+```
+Python3
+```python
+>>> try:
+...     v = int('x')
+... except ValueError:
+...     raise Exception('Something Wrong')
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+ValueError: invalid literal for int() with base 10: 'x'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<stdin>", line 4, in <module>
+Exception: Something Wrong
 ```

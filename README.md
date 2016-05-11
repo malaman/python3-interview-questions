@@ -177,3 +177,27 @@ Exception: Something Wrong
 
 Decorator is a callable object (i.e. function), which receives a function as an argument and returns other function.
 Decorators are used to add common functionality to the functions (for example add logging or debug information).
+
+```python
+>>> def decorate(func):
+...     def inner(*args, **kwargs):
+...         print('args: {} kwargs: {}'.format(args, kwargs))
+...         return func(*args, **kwargs)
+...     return inner
+...
+>>>  @decorate
+... def add(a, b):
+...     return a+b
+...
+>>> 
+>>> add(1, 2)
+args: (1, 2) kwargs: {}
+3
+>>> def sub(a, b):
+...     return a-b
+... 
+>>> sub = decorate(sub)
+>>> sub(1,2)
+args: (1, 2) kwargs: {}
+-1
+```

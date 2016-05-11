@@ -15,7 +15,7 @@
 * What is the differences between range, map, filter commands for Python3 and Python2?
 * What is the differences in integer division operations between Python3 and Python2?
 * What is the differences in exception handling between Python3 and Python2?
-
+* What is the decorators in Python?
 
 
 ### Answers
@@ -173,3 +173,7 @@ Traceback (most recent call last):
   File "<stdin>", line 4, in <module>
 Exception: Something Wrong
 ```
+* What is the decorators in Python?
+
+Decorator is a callable object (i.e. function), which receives a function as an argument and returns other function.
+Decorators are used to add common functionality to the functions (for example add logging or debug information).

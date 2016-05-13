@@ -3,11 +3,15 @@
 ## Table of contents
 
   1. [Questions](#questions)
+    1. [Basic Questions](#basic-questions)
+    2. [Nerd questions](#nerd-questions)
   2. [Answers] (#answers)
-  
+
 
 ### Questions
 
+
+<a name="basic-questions"></a> 
 #### Basic questions
 * What are the differences in print command between Python3 and Python2?
 * How to write Python3 compatible code in Python2?
@@ -17,6 +21,9 @@
 * What is the differences in exception handling between Python3 and Python2?
 * What is the decorators in Python?
 
+<a name="nerd-questions"></a> 
+### Funny nerd questions
+* Is it possible to write python code with curly braces?
 
 ### Answers
 
@@ -201,3 +208,16 @@ args: (1, 2) kwargs: {}
 args: (1, 2) kwargs: {}
 -1
 ```
+
+### Answers to [Funny nerd questions](#nerd_questions)
+
+* Is it possible to write python code with curly braces?
+
+There is special import from `__future__` module, which was designed to enable possibility to code in python with curly braces, but for misterios reasons interpreter reports `SyntaxError: not a chance`. Some developers consider this error as the most funniest error in python :)
+
+```python
+>>> from __future__ import braces
+  File "<stdin>", line 1
+SyntaxError: not a chance
+```
+

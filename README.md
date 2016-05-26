@@ -210,7 +210,7 @@ args: (1, 2) kwargs: {}
 -1
 ```
 
-### Answers to [Nerd questions](#nerd_questions)
+### Answers to [Nerd questions](#nerd-questions)
 
 * Is it possible to write python code with curly braces?
 

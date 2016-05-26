@@ -22,8 +22,9 @@
 * What is the decorators in Python?
 
 <a name="nerd-questions"></a> 
-### Funny nerd questions
+### Nerd questions
 * Is it possible to write python code with curly braces?
+* What is The Zen of Python?
 
 ### Answers
 
@@ -209,7 +210,7 @@ args: (1, 2) kwargs: {}
 -1
 ```
 
-### Answers to [Funny nerd questions](#nerd_questions)
+### Answers to [Nerd questions](#nerd_questions)
 
 * Is it possible to write python code with curly braces?
 
@@ -220,4 +221,35 @@ There is special import from `__future__` module, which was designed to enable p
   File "<stdin>", line 1
 SyntaxError: not a chance
 ```
+
+* What is The Zen of Python?
+
+This is probably the most famous python joke. You should `import this` to receive the answer.
+
+```python
+>>> import this
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+
+```
+
 

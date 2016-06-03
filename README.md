@@ -20,6 +20,7 @@
 * What is the differences in integer division operations between Python3 and Python2?
 * What is the differences in exception handling between Python3 and Python2?
 * What is the decorators in Python?
+* What are absolute and explicit relative imports in Python3?
 
 <a name="nerd-questions"></a> 
 ### Nerd questions
@@ -209,6 +210,19 @@ args: (1, 2) kwargs: {}
 args: (1, 2) kwargs: {}
 -1
 ```
+
+* What are absolute and explicit relative imports in Python3?
+
+Absolute imports are the imports from `sys.path` (example: `from some_package import something`. Search of `some_package` will be performed in the `sys.path` locations.).
+
+Explicit relative imports are the imports from a module relative to that module's location, (example: `from .some_package import something`. Search of `some_package` will be performed in the current directory.).
+
+In Python2 `from some_package import something` statement searches also in the current directory.
+Python3 also allows `from same_package import *` imports only in the begining of file.
+Python2 allows such imports in any place of a file.
+
+
+
 
 ### Answers to [Nerd questions](#nerd-questions)
 

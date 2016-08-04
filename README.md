@@ -21,6 +21,7 @@
 * What is the differences in exception handling between Python3 and Python2?
 * What is the decorators in Python?
 * What are absolute and explicit relative imports in Python3?
+* What is the simplest way to merge two dicts in Python3?
 
 <a name="nerd-questions"></a> 
 ### Nerd questions
@@ -221,6 +222,23 @@ In Python2 `from some_package import something` statement searches also in the c
 Python3 also allows `from same_package import *` imports only in the begining of file.
 Python2 allows such imports in any place of a file.
 
+* What is the simplest way to merge two dicts in Python3?
+
+Python3.5 introduces unpacking operators in literals and allows to use following:
+```python
+>>> dict1 = {'x': 1, 'y': 2}
+>>> dict2 = {'z': 3}
+>>> dict3 = {**dict1, **dict2}
+>>> dict3
+{'x': 1, 'y': 2, 'z': 3}
+```
+If you use pre Python3 version, following method could be used:
+```python
+>>> dict3 = dict1.copy()
+>>> dict3.update(dict2)
+>>> dict3
+{'x': 1, 'y': 2, 'z': 3}
+```
 
 
 

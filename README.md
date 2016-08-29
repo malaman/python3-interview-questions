@@ -22,6 +22,7 @@
 * What is the decorators in Python?
 * What are absolute and explicit relative imports in Python3?
 * What is the simplest way to merge two dicts in Python3?
+* Is it possible to compare string and int in Python3?
 
 <a name="nerd-questions"></a> 
 ### Nerd questions
@@ -240,7 +241,27 @@ If you use pre Python3 version, following method could be used:
 {'x': 1, 'y': 2, 'z': 3}
 ```
 
+* Is it possible to compare string and int in Python3?
 
+No. Python3 does not allow to compare unorderable types and raises exception. Python2 allows comparison any type to any type.
+
+Python2
+```python
+>>> 'x' > 2
+True
+>>> 'foo' > 2.0
+True
+```
+
+Python3
+```python
+>>> 'x' > 2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unorderable types: str() > int()
+>>> 2.4 > 2
+True
+```
 
 ### Answers to [Nerd questions](#nerd-questions)
 

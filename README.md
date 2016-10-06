@@ -4,7 +4,8 @@
 
   1. [Questions](#questions)
     1. [Basic Questions](#basic-questions)
-    2. [Nerd questions](#nerd-questions)
+    2. [Nerd Questions](#nerd-questions)
+    3. [Other Questions](#other-questions)
   2. [Answers] (#answers)
 
 
@@ -29,9 +30,13 @@
 * Is it possible to write python code with curly braces?
 * What is The Zen of Python?
 
+<a name="other-questions"></a>
+### Other questions
+* Do you know how to start web server in a local directory with python?
+
 ### Answers
 
-### Answers to [Basic questions](#questions)
+### Answers to [Basic questions](#basic-questions)
 * What are the differences in `print` command between Python3 and Python2?
 
     1. Python3 `print `requires parantheses around arguments, because Python3 `print` is a function. 
@@ -305,4 +310,14 @@ Namespaces are one honking great idea - let's do more of those!
 
 ```
 
+### Answers to [Other questions](#other-questions)
 
+* Do you know how to start web server in a local directory with python?
+
+If python is installed on your OS it is possible to run web server within any directory with single command
+
+```bash
+$python -m SimpleHTTPServer 9091
+Serving HTTP on 0.0.0.0 port 9091 ...
+
+```

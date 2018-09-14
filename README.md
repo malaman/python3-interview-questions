@@ -12,7 +12,6 @@
 
 ### Questions
 
-
 <a name="basic-questions"></a> 
 #### Basic questions
 * What are the differences in print command between Python3 and Python2?
@@ -27,12 +26,12 @@
 * Is it possible to compare string and int in Python3?
 
 <a name="nerd-questions"></a> 
-### Nerd questions
+#### Nerd questions
 * Is it possible to write python code with curly braces?
 * What is The Zen of Python?
 
 <a name="other-questions"></a>
-### Other questions
+#### Other questions
 * Do you know how to start web server in a local directory with python?
 
 ### Answers

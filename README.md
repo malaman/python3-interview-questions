@@ -1,12 +1,13 @@
-# python3-interview-questions
+# Python3 Interview Questions and Answers
 
 ## Table of contents
 
-  1. [Questions](#questions)
-    1. [Basic Questions](#basic-questions)
-    2. [Nerd Questions](#nerd-questions)
-    3. [Other Questions](#other-questions)
-  2. [Answers] (#answers)
+* [Questions](#questions)
+  * [Basic Questions](#basic-questions)
+  * [Nerd Questions](#nerd-questions)
+  * [Other Questions](#other-questions)
+
+* [Answers](#answers)
 
 
 ### Questions

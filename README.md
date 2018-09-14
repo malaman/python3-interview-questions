@@ -1,16 +1,16 @@
-# python3-interview-questions
+# Python3 Interview Questions and Answers
 
 ## Table of contents
 
-  1. [Questions](#questions)
-    1. [Basic Questions](#basic-questions)
-    2. [Nerd Questions](#nerd-questions)
-    3. [Other Questions](#other-questions)
-  2. [Answers] (#answers)
+* [Questions](#questions)
+  * [Basic Questions](#basic-questions)
+  * [Nerd Questions](#nerd-questions)
+  * [Other Questions](#other-questions)
+
+* [Answers](#answers)
 
 
 ### Questions
-
 
 <a name="basic-questions"></a> 
 #### Basic questions
@@ -26,12 +26,12 @@
 * Is it possible to compare string and int in Python3?
 
 <a name="nerd-questions"></a> 
-### Nerd questions
+#### Nerd questions
 * Is it possible to write python code with curly braces?
 * What is The Zen of Python?
 
 <a name="other-questions"></a>
-### Other questions
+#### Other questions
 * Do you know how to start web server in a local directory with python?
 
 ### Answers
